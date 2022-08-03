@@ -6,11 +6,12 @@ function HeaderNav() {
       <Navbar fluid={true} rounded={true}>
         <Navbar.Brand href="https://flowbite.com/">
           <img
-            src=".../assets/images/bitmoji"
-            className="mr-3 h-6 sm:h-9"
-            alt="Chika Bitmoji"
+            class="w-10 h-10 rounded-full"
+            src="/assets/images/bitmoji.png"
+            alt="Rounded avatar"
           />
-          <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+
+          <span className="px-2 self-center whitespace-nowrap text-xl font-semibold dark:text-white">
             Chika Kim Portfolio
           </span>
         </Navbar.Brand>

@@ -4,6 +4,7 @@ import FooterBar from "../components/footer";
 import AboutMe from "../components/aboutMe";
 import ContactForm from "../components/contact";
 import Resume from "../components/resume";
+import { Card } from "flowbite-react";
 
 function DefaultPage() {
   const projects = [
@@ -61,21 +62,24 @@ function DefaultPage() {
     <div>
       <HeaderNav />
       <AboutMe />
-      <div class="flex flex-wrap gap-2">
-        <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-          Portfolio
-        </h5>
-        <div class="flex wrap justify-around">
-          {projects.map((project) => (
-            <PortfolioCard
-              imgSrc={project.imgSrc}
-              title={project.title}
-              description={project.description}
-              githubLink={project.githubLink}
-            />
-          ))}
+      <Card>
+        <div class="flex flex-wrap gap-2">
+          <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            Portfolio
+          </h5>
+          <div class="flex flex-wrap justify-around gap-4">
+            {projects.map((project) => (
+              <PortfolioCard
+                class="max-w-sm min-h-400"
+                imgSrc={project.imgSrc}
+                title={project.title}
+                description={project.description}
+                githubLink={project.githubLink}
+              />
+            ))}
+          </div>
         </div>
-      </div>
+      </Card>
       <Resume />
       <ContactForm />
       <FooterBar />
