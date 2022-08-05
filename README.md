@@ -8,6 +8,8 @@ My portfolio showcasing some of my work from the bootcamp.
 
 
 ## Deployed application
+https://ckim14.github.io/pink-grapefruits/
+
 
 ## Built with
 * Tailwind CSS
