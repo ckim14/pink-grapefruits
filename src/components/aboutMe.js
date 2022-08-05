@@ -6,7 +6,7 @@ function AboutMe() {
       <Card>
         <div class="flex flex-wrap justify-between">
           <img
-            src="assets/images/banner1.JPG"
+            src="assets/images/banner1.jpg"
             alt="chika banner image"
             class="max-w-md"
           />
