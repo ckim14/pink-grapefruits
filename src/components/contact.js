@@ -1,18 +1,11 @@
 import { useState } from "react";
 import { Forms, Label, TextInput, Button, Card } from "flowbite-react";
+import ValidatedTextInput from "./validatedTextInput";
 
 function ContactForm() {
   const [name, setName] = useState("");
-  const [nameColor, setNameColor] = useState("");
-  const validateName = () => {
-    if (name === "") {
-      setNameColor("red");
-      alert("wrong");
-    } else {
-      setNameColor("");
-    }
-  };
-
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   return (
     <div>
       <Card>
@@ -32,26 +25,44 @@ function ContactForm() {
               <div className="mb-2 block">
                 <Label htmlFor="Name" value="Name" />
               </div>
-              <TextInput
+              <ValidatedTextInput
                 id="name"
                 name="name"
                 required={true}
                 value={name}
                 onChange={(event) => setName(event.target.value)}
-                onBlur={validateName}
-                color={nameColor}
+                validation={(value) => !!value.trim()}
+                validationText="Name cannot be blank!"
               />
             </div>
             <div className="mb-2 block">
               <Label htmlFor="email1" value="Email" />
             </div>
-            <TextInput id="email1" type="email" required={true} />
+            <ValidatedTextInput
+              id="email1"
+              name="email1"
+              required={true}
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
+              validation={(value) =>
+                /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)
+              }
+              validationText="Email must be valid!"
+            />
           </div>
           <div>
             <div className="mb-2 block">
               <Label htmlFor="message" value="Message" />
             </div>
-            <TextInput id="Message" type="text" sizing="lg" />
+            <ValidatedTextInput
+              id="message"
+              name="message"
+              required={true}
+              value={message}
+              onChange={(event) => setMessage(event.target.value)}
+              validation={(value) => !!value.trim()}
+              validationText="Message cannot be blank!"
+            />
           </div>
           <Button type="submit">Submit</Button>
         </form>
