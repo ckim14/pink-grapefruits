@@ -10,7 +10,7 @@ function AboutMe() {
             alt="chika banner image"
             class="max-w-md"
           />
-          <div class="max-w-md">
+          <div class="max-w-2xl">
             <h5
               id="aboutme"
               className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white"

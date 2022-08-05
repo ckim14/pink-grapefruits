@@ -5,7 +5,6 @@ import AboutMe from "../components/aboutMe";
 import ContactForm from "../components/contact";
 import Resume from "../components/resume";
 import { Card } from "flowbite-react";
-import Banner from "../components/carousel";
 
 function DefaultPage() {
   const projects = [
