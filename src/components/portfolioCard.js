@@ -3,7 +3,7 @@ import { Card } from "flowbite-react";
 function PortfolioCard(props) {
   const { imgSrc, title, description, githubLink, hostLink } = props;
   return (
-    <div class="max-w-sm min-h-400">
+    <div class="max-w-sm min-h-400 background-color: rgb(203 213 225);">
       <Card imgSrc={imgSrc}>
         <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
           {title}

@@ -3,7 +3,7 @@ import { Navbar } from "flowbite-react";
 function HeaderNav() {
   return (
     <div>
-      <Navbar fluid={true} rounded={true}>
+      <Navbar stylee="background-color: bde0fe" fluid={true} rounded={true}>
         <Navbar.Brand href="https://flowbite.com/">
           <img
             class="w-10 h-10 rounded-full"
@@ -20,10 +20,10 @@ function HeaderNav() {
           <Navbar.Link href="/navbars" active={true}>
             Home
           </Navbar.Link>
-          <Navbar.Link href="/aboutme">About Me</Navbar.Link>
-          <Navbar.Link href="/portfolio">Portfolio</Navbar.Link>
-          <Navbar.Link href="/resume">Resume</Navbar.Link>
-          <Navbar.Link href="/contact">Contact</Navbar.Link>
+          <Navbar.Link href="#aboutme">About Me</Navbar.Link>
+          <Navbar.Link href="#portfolio">Portfolio</Navbar.Link>
+          <Navbar.Link href="#resume">Resume</Navbar.Link>
+          <Navbar.Link href="#contact">Contact</Navbar.Link>
         </Navbar.Collapse>
       </Navbar>
     </div>

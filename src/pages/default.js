@@ -5,6 +5,7 @@ import AboutMe from "../components/aboutMe";
 import ContactForm from "../components/contact";
 import Resume from "../components/resume";
 import { Card } from "flowbite-react";
+import Banner from "../components/carousel";
 
 function DefaultPage() {
   const projects = [
@@ -61,10 +62,14 @@ function DefaultPage() {
   return (
     <div>
       <HeaderNav />
+
       <AboutMe />
-      <Card>
+      <Card class="background-color: 8ecae6">
         <div class="flex flex-wrap gap-2">
-          <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <h5
+            id="portfolio"
+            className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+          >
             Portfolio
           </h5>
           <div class="flex flex-wrap justify-around gap-4">
