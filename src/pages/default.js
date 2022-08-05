@@ -9,7 +9,7 @@ import { Card } from "flowbite-react";
 function DefaultPage() {
   const projects = [
     {
-      imgSrc: "/assets/images/workday-scheduler.png",
+      imgSrc: "assets/images/workday-scheduler.png",
       title: "Workday Scheduler",
       description:
         "This application is a daily planner to help you manage your day effectively.",
@@ -17,7 +17,7 @@ function DefaultPage() {
       hostLink: "https://ckim14.github.io/challenge5-workdayscheduler/ ",
     },
     {
-      imgSrc: "/assets/images/weather-dashboard.png",
+      imgSrc: "assets/images/weather-dashboard.png",
       title: "Weather Dashboard",
       description:
         "This application allows you to search for the current weather and 5 day forcast in a major city using the Open Weather API.",
@@ -25,7 +25,7 @@ function DefaultPage() {
       hostLink: "https://ckim14.github.io/module6-weather/ ",
     },
     {
-      imgSrc: "/assets/images/password-generator.png",
+      imgSrc: "assets/images/password-generator.png",
       title: "Password Generator",
       description:
         "The application will ask you for your minimum length for your password, and whether it needs to include lowercase letters, uppercase letters, and symbols.",

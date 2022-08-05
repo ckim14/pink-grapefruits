@@ -4,10 +4,10 @@ function HeaderNav() {
   return (
     <div>
       <Navbar stylee="background-color: bde0fe" fluid={true} rounded={true}>
-        <Navbar.Brand href="https://flowbite.com/">
+        <Navbar.Brand href="https://ckim14.github.io/pink-grapefruits/">
           <img
             class="w-10 h-10 rounded-full"
-            src="/assets/images/bitmoji.png"
+            src="assets/images/bitmoji.png"
             alt="Rounded avatar"
           />
 
@@ -17,7 +17,10 @@ function HeaderNav() {
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>
-          <Navbar.Link href="/navbars" active={true}>
+          <Navbar.Link
+            href="https://ckim14.github.io/pink-grapefruits/"
+            active={true}
+          >
             Home
           </Navbar.Link>
           <Navbar.Link href="#aboutme">About Me</Navbar.Link>
